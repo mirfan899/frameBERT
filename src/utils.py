@@ -3,7 +3,7 @@ import sys
 import torch
 from transformers import *
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-from keras.preprocessing.sequence import pad_sequences
+from keras_preprocessing.sequence import pad_sequences
 import numpy as np
 from torch import nn
 

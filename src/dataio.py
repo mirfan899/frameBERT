@@ -6,7 +6,7 @@ sys.path.insert(0,'../')
 sys.path.insert(0,'../../')
 from transformers import *
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-from keras.preprocessing.sequence import pad_sequences
+from keras_preprocessing.sequence import pad_sequences
 
 from frameBERT.koreanframenet import koreanframenet
 from frameBERT.src import kotimex
