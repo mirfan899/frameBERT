@@ -32,7 +32,6 @@ class WebService(Resource):
             result_format = args['format']
 
         result = f_parser.parser(args['text'], sent_id=False, result_format=result_format)
-        print(result)
         return result, 200
 
 
