@@ -12,7 +12,7 @@ sys.path.insert(0,'../../')
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 n_gpu = torch.cuda.device_count()
-if device != "cpu":
+if device.type != "cpu":
     torch.cuda.set_device(0)
 
 MAX_LEN = 256
