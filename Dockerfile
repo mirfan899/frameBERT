@@ -1,6 +1,8 @@
 #FROM pure/python:3.7-cuda10.2-cudnn7-runtime
 FROM python:3.7.13-buster
 
+WORKDIR /frameBERT
+
 COPY . .
 
 RUN python -m pip install --upgrade pip
