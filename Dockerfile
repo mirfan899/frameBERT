@@ -12,4 +12,4 @@ RUN git clone https://github.com/machinereading/koreanframenet.git
 RUN gdown https://drive.google.com/drive/folders/1bDUoIniUNUm2I0ztXWo6hitOpLmU9lv4 -O ./en --folder
 
 EXPOSE 5000
-CMD ["pyhon", "api.py"]
+CMD ["python", "api.py"]
