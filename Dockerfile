@@ -1,4 +1,5 @@
-FROM pure/python:3.7-cuda10.2-cudnn7-runtime
+#FROM pure/python:3.7-cuda10.2-cudnn7-runtime
+FROM python:3.7.13-buster
 
 COPY . .
 
