@@ -11,7 +11,7 @@ sys.path.insert(0,'../')
 sys.path.insert(0,'../../')
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-n_gpu = torch.cuda.device_count()
+# n_gpu = torch.cuda.device_count()
 if device.type != "cpu":
     torch.cuda.set_device(0)
 
@@ -261,7 +261,6 @@ def get_masks(datas, mapdata, num_label=2, masking=True):
     with torch.no_grad():
         if masking == True:
             for idx in datas:
-                torch.cuda.set_device(0)
                 indx = str(idx).split('[')[-1].split(']')[0]
                 mask = torch.zeros(num_label)
                 candis = mapdata[indx]
